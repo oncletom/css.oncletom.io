@@ -1,0 +1,29 @@
+{
+  "name": "css.oncletom.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "UI components used for oncletom.io, oncletom.io/talks etc.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oncletom/css.oncletom.io.git"
+  },
+  "keywords": [
+    "css",
+    "oncletom"
+  ],
+  "author": "Thomas Parisot <thomas@oncle-tom.net>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/oncletom/css.oncletom.io/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-contrib-uglify": "~0.2.7"
+  }
+}

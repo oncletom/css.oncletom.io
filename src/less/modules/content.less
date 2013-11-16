@@ -1,0 +1,122 @@
+.box(@radius: 2px){
+  background-color: fade(#fff, .4);
+  border-radius: @radius;
+  .box-shadow(0 0 @grid-gutter-width/2 @gray);
+
+  .transition(box-shadow .2s ease-out);
+
+  &:hover, &:focus{
+    .box-shadow(0 0 @grid-gutter-width/1.5 darken(@brand-primary, 35%));
+  }
+}
+
+article, .article, aside{
+  .box();
+  position: relative;
+}
+
+article h2,
+.article header,
+.menu > li{
+  background-color: fade(#fff, .4);
+  border-radius: 2px 2px 0 0;
+  font-size: 1.3em;
+  margin: 0;
+  padding: @grid-gutter-width / 2;
+
+  & > a{
+    display: block;
+    .text-overflow();
+  }
+}
+
+article, .article{
+  min-height: 200px;
+  margin-bottom: @grid-gutter-width;
+
+  body.single &,
+  body.page &{
+    height: auto;
+  }
+
+  .excerpt, .content, #commentform, #responses{
+    padding: @grid-gutter-width / 2;
+
+    a{
+      text-decoration: underline;
+
+      &:hover, &:focus{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.post-cover{
+  background: #fff;
+  text-align: center;
+}
+
+.navigation{
+  .previous-next a{
+    font-weight: bold;
+  }
+
+  .nav-link a{
+    display: block;
+    font-size: 2em;
+    height: 100%;
+    line-height: 6;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.compact-archives{
+  list-style: none;
+  margin-left: 0;
+
+  .archive-item{
+    margin-bottom: .5em;
+
+    &:hover time{
+      color: #000;
+    }
+  }
+
+  time{
+    color: lighten(@text-color, 10);
+    display: inline-block;
+    padding-right: 1em;
+    text-align: right;
+    width: 6.5em;
+  }
+}
+
+@media (max-width: 767px){
+  article, .article{
+    min-height: 0;
+  }
+
+  .compact-archives{
+    .archive-item{
+      margin-bottom: 1em;
+    }
+
+    time{
+      display: block;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 979px){
+  article, .article{
+    height: auto;
+
+    .excerpt{
+      max-height: none;
+    }
+  }
+}
