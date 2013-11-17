@@ -15,6 +15,13 @@
     "css",
     "oncletom"
   ],
+  "config": {
+    "services": {
+      "Expertise Web": "https://oncletom.io/expertise",
+      "Blog": "https://oncletom.io",
+      "Conférences": "https://oncletom.io/talks"
+    }
+  },
   "author": "Thomas Parisot <thomas@oncle-tom.net>",
   "license": "WTFPL",
   "bugs": {
