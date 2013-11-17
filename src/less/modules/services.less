@@ -7,6 +7,7 @@
 
   a{
     border-top: 2px solid transparent;
+    text-shadow: 0 1px 0 @gray-darker;
   }
 
   .nav a{
@@ -30,30 +31,27 @@
   #services{
     text-align: right;
 
-    .nav-collapse{
+    .navbar-collapse,
+    .navbar-header {
       .pull-right;
     }
 
-    .brand{
-      float: right;
-      padding-right: 0;
-    }
-
-    .navbar-inner{
+    &.navbar,
+    &.navbar-inverse {
       border: none;
-      background: transparent;
+      background-color: transparent;
       .box-shadow(none);
       padding-right: 0;
     }
 
     .active a{
       background: transparent;
-      border-color: @navbar-default-brand-color;
+      border-color: @navbar-inverse-brand-color;
       .box-shadow(none);
 
       &:after{
         border: 7px solid transparent;
-        border-top-color: @navbar-default-brand-color;
+        border-top-color: @navbar-inverse-brand-color;
         content: "";
         height: 0;
         margin-left: -10px;
