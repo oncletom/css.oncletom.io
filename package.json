@@ -17,9 +17,9 @@
   ],
   "config": {
     "services": {
-      "Expertise Web": "https://oncletom.io/expertise",
-      "Blog": "https://oncletom.io",
-      "Conférences": "https://oncletom.io/talks"
+      "Blog": "/",
+      "Conférences": "/talks",
+      "Projets Web": "/projects"
     }
   },
   "author": "Thomas Parisot <thomas@oncle-tom.net>",
