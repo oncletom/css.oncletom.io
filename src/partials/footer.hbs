@@ -15,9 +15,9 @@
 	</p>
 
 	<ul class="list-unstyled">
-	  {{#eachProperty links}}
+	  {{#eachProperty config.links}}
 	  <li class="menu-item">
-	    <a href="{{ value }}">{{ key }}</a>
+	    <a href="{{ this.value }}">{{ this.key }}</a>
 	  </li>
 	  {{/eachProperty}}
 	</ul>
