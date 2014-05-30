@@ -1,0 +1,40 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+	<p>
+	  <a href="/slash-me" rel="me" class="about">
+	    <img src="/assets/avatar.jpg" alt="" class="avatar img-thumbnail">
+	  </a>
+	</p>
+
+	<p>
+	  Hey, I'm <a href="/slash-me/" rel="me">Thomas</a>!
+	  A french <em>web engineer</em> living in <em>London</em>
+	  and working for <a href="http://bbc.co.uk/rd">BBC R&D</a>.
+	</p>
+
+	<ul class="list-unstyled">
+	  {{#eachProperty links}}
+	  <li class="menu-item">
+	    <a href="{{ value }}">{{ key }}</a>
+	  </li>
+	  {{/eachProperty}}
+	</ul>
+      </div>
+
+      <div class="col-sm-8">
+	<div class="row">
+	  <div class="col-sm-12">
+	    <form action="https://google.com/search" method="get" class="form" role="search">
+	      <input type="hidden" name="q" value="site:oncletom.io" />
+	      <input type="search" name="q" value="" class="form-control" placeholder="What are you looking for?" required>
+	      <button type="submit" class="btn btn-primary">Search</button>
+	    </form>
+	  </div>
+	</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
