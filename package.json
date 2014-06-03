@@ -1,7 +1,7 @@
 {
   "name": "css.oncletom.io",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "UI components used for oncletom.io, oncletom.io/talks etc.",
   "main": "Gruntfile.js",
   "scripts": {
