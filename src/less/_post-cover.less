@@ -1,6 +1,13 @@
 .post-cover {
   background-position: center center;
   background-size: cover;
-  height: 25em;
-  max-height: 50vh;
+  height: 20em;
+
+  &:after {
+    content: " ";
+    display: block;
+    #gradient .vertical(fade(#000, 30%), fade(#000, 0%), 0, 33%);
+    height: 100%;
+    width: 100%;
+  }
 }

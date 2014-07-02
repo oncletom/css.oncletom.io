@@ -1,6 +1,33 @@
 .header {
-  background: @brand-darker;
+  background: @body-bg;
   color: #fff;
+
+  h1, h2, blockquote {
+    text-shadow: 0 0 2px fade(#fff, 30%);
+  }
+
+  h2 {
+    padding: 0;
+  }
+
+  .avatar {
+    border-radius: 2px;
+    margin-right: .25em;
+    max-height: 100%;
+  }
+
+  .navbar {
+    .translate(0, -@navbar-height - 1);
+    .transition-transform(ease .5s);
+
+    &.visible {
+      .translate(0, 0);
+    }
+  }
+
+  .navbar-brand small {
+    color: #fafafa;
+  }
 }
 
 @media (max-width: @screen-xs-max) {
