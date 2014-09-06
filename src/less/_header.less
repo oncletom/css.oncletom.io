@@ -1,5 +1,4 @@
 .header {
-  background: @body-bg;
   color: #fff;
 
   h1, h2, blockquote {
@@ -14,15 +13,16 @@
     border-radius: 2px;
     margin-right: .25em;
     max-height: 100%;
+    vertical-align: top;
   }
 
   .navbar {
-    opacity: 0.3;
-    .transition(opacity .5s ease);
+    background-color: fade(@navbar-default-bg, 20%);
+    .transition(background-color .5s ease);
 
     &.visible,
     &:hover {
-      opacity: 1;
+      background-color: @navbar-default-bg;
     }
   }
 

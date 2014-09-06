@@ -45,9 +45,12 @@
 
     a {
       color: @color;
+      text-decoration: underline;
 
-      &:hover {
-        text-decoration: underline;
+      &:hover,
+      &:focus {
+        background-color: fade(@brand-primary, 70%);
+        text-decoration: none;
       }
     }
   }
