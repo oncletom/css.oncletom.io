@@ -1,13 +1,54 @@
 .post-cover {
-  background-position: center center;
-  background-size: cover;
-  height: 20em;
+  height: 100vh;
+  margin-bottom: 1.5em;
+  position: relative;
 
-  &:after {
-    content: " ";
-    display: block;
-    #gradient .vertical(fade(#000, 30%), fade(#000, 0%), 0, 33%);
+  .post-cover__hero {
+    background-position: center center;
+    background-size: cover;
     height: 100%;
+    position: absolute;
     width: 100%;
+    z-index: 0;
+
+    &:after {
+      background-color: #000;
+      content: " ";
+      display: block;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .post-cover__body {
+    @color: #f0f0f0;
+
+    bottom: 0;
+    color: @color;
+    position: absolute;
+    text-shadow: 1px 1px 1px fade(#000, 80%);
+    width: 100%;
+    z-index: 10;
+
+    em, strong {
+      background-color: fade(@brand-primary, 70%);
+      font-style: normal;
+      padding-left: .25em;
+      padding-right: .25em;
+    }
+
+    h1, h2 {
+      line-height: 1.35;
+      padding-top: 0;
+    }
+
+    a {
+      color: @color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

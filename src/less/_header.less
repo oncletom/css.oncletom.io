@@ -17,11 +17,12 @@
   }
 
   .navbar {
-    .translate(0, -@navbar-height - 1);
-    .transition-transform(ease .5s);
+    opacity: 0.3;
+    .transition(opacity .5s ease);
 
-    &.visible {
-      .translate(0, 0);
+    &.visible,
+    &:hover {
+      opacity: 1;
     }
   }
 
