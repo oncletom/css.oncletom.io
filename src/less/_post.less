@@ -1,7 +1,14 @@
 .post {
   .post-header {
+    a {
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
     small {
       display: block;
+      font-weight: inherit;
     }
   }
 
@@ -29,6 +36,14 @@
   }
 
   .content {
+    a {
+      text-decoration: underline;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
     img[src^='/images'],
     .interactive-loading.loading img,
     .interactive-loading.loaded img,
@@ -40,42 +55,47 @@
       .img-responsive;
     }
 
-    figure.highlight{
+    figure.highlight {
       margin-left: 0;
       margin-right: 0;
 
-      .gutter{
-	text-align: right;
+      figcaption {
+        color: @gray;
+        font-family: @font-family-monospace;
       }
 
-      .code pre{
-	max-width: @screen-lg;
-	overflow-x: auto;
-	width: 75vw;
-	white-space: pre;
-	word-wrap: normal;
+      .gutter {
+        text-align: right;
+      }
+
+      .code pre {
+        max-width: @screen-lg;
+        overflow-x: auto;
+        width: 75vw;
+        white-space: pre;
+        word-wrap: normal;
       }
     }
   }
 
-  .lang-javascript .string{
+  .lang-javascript .string {
     color: #d14;
   }
-  .lang-javascript .comment{
+  .lang-javascript .comment {
     color: #998;
     font-style: italic;
   }
   .lang-javascript .literal,
-  .lang-javascript .keyword{
+  .lang-javascript .keyword {
     font-weight: bold;
   }
-  .lang-javascript .regexp{
+  .lang-javascript .regexp {
     color: #009926;
   }
-  .lang-javascript .number{
+  .lang-javascript .number {
     color: #099;
   }
-  .lang-javascript .params{
+  .lang-javascript .params {
     color: #0086B3;
   }
 
@@ -104,12 +124,12 @@
       cursor: default;
       font-size: 0;
 
-      br{
-	display: none;
+      br {
+        display: none;
       }
 
       &::after {
-	content: "";
+        content: "";
       }
     }
   }

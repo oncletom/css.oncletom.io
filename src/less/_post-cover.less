@@ -53,6 +53,8 @@
 
     bottom: 0;
     color: @color;
+    font-family: @font-family-sans-serif;
+    font-weight: 300;
     position: absolute;
     text-shadow: 1px 1px 1px fade(#000, 80%);
     width: 100%;
@@ -71,8 +73,8 @@
     }
 
     a {
+      border-bottom: 1px solid @color;
       color: @color;
-      text-decoration: underline;
 
       &:hover,
       &:focus {
