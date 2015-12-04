@@ -37,10 +37,14 @@
 
   .content {
     a {
-      text-decoration: underline;
+      color: @gray;
+      text-decoration: none;
+      text-shadow: 1px 1px #fff;
+      box-shadow: 0 -2px 0 fade(@brand-primary, 70%) inset;
 
       &:hover, &:focus {
-        text-decoration: none;
+        color: black;
+        box-shadow: 0 -2px 0 @brand-primary inset;
       }
     }
 
