@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/oncletom/css.oncletom.io/issues"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
 }
