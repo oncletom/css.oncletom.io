@@ -1,9 +1,38 @@
+@import (reference) 'mixins.less';
+
 .footer {
   .header;
 
   background: @brand-darker;
-  margin: sqrt(2em) 0 0;
+  border-top: 2px solid @brand-primary;
   padding: sqrt(2em) 0;
+
+  > section {
+    .container;
+  }
+
+  article {
+    .make-sm-column(4);
+  }
+  aside {
+    .make-sm-column(8);
+  }
+
+  article,
+  aside {
+    section {
+      .make-row();
+    }
+  }
+
+  .tagged-links,
+  .archive-list {
+    .list-inline;
+
+    a {
+      .link-pill(@brand-primary, @body-bg);
+    }
+  }
 
   a:before {
     color: darken(#fff, 10%);
@@ -30,6 +59,8 @@
 }
 
 [role="search"] {
+  .make-sm-column(12);
+
   position: relative;
 
   input[type="search"] {

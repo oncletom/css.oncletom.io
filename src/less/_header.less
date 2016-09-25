@@ -17,15 +17,11 @@
   }
 
   .navbar {
-    background-color: fade(@navbar-default-bg, 20%);
+    border: none;
+    border-bottom: 2px solid @brand-primary;
+    border-radius: 0;
     font-family: @font-family-sans-serif;
     font-weight: 300;
-    .transition(background-color .5s ease);
-
-    &.visible,
-    &:hover {
-      background-color: @navbar-default-bg;
-    }
   }
 
   .navbar-collapse {

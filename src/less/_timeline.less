@@ -1,0 +1,35 @@
+.timeline {
+  position: relative;
+
+
+  @media (min-width: @screen-md-min) {
+    &:before {
+      background: @brand-primary;
+      content: "";
+      display: block;
+      left: 50px + (@grid-gutter-width / 2);
+      height: 100%;
+      position: absolute;
+      width: 2px;
+      z-index: -1;
+    }
+
+    .headline-list__date {
+      background-color: @body-bg;
+      margin-left: @grid-gutter-width / 2;
+      padding: 0;
+
+      // to be calculated based on the breakpoint
+      height: 100px;
+      width: 100px;
+    }
+
+
+    .headline-list {
+      .headline-list__date {
+        border: 2px solid @brand-primary;
+        border-radius: 50%;
+      }
+    }
+  }
+}

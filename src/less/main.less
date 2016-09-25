@@ -6,8 +6,10 @@ h1, h2, h3, h4 {
   padding: sqrt(1.1em) 0;
 }
 
-#most-recent {
-  background-color: @gray-lighter;
+
+::selection {
+  text-decoration: none;
+  text-shadow: none;
 }
 
 @import './_header.less';
@@ -15,3 +17,6 @@ h1, h2, h3, h4 {
 @import './_metadata.less';
 @import './_post-cover.less';
 @import './_post.less';
+@import './_hero.less';
+@import './_timeline.less';
+@import './_headline-list.less';
