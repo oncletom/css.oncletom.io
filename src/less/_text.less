@@ -23,7 +23,7 @@
   }
 }
 
-[data-signed-by] {
+[data-signed-by]:not([data-signed-by]="") {
   &:after {
     content: '— ' attr(data-signed-by) !important;
     display: block;
