@@ -1,0 +1,47 @@
+@import (reference) 'mixins.less';
+@import './_links';
+@import './_text';
+@import './_hero';
+
+
+.card {
+  border-bottom: 1px solid @gray-light;
+  padding-bottom: .5em;
+
+  .card__cover {
+    background-color: @gray-lighter;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+  }
+
+  .card__headline {
+    padding-bottom: .5em;
+    padding-top: .5em;
+
+    a {
+      .highlight(@gray, .28em);
+    }
+  }
+
+  .card__summary {
+    min-height: (4em * @line-height-base);
+  }
+
+  .card__metadata {
+    .list-inline;
+    color: @gray-light;
+
+    .metadata:empty {
+      display: none;
+    }
+
+    .metadata--date {
+      time {
+        border: 1px solid @gray-lighter;
+        border-radius: 3px;
+        padding: 3px 5px;
+      }
+    }
+  }
+}

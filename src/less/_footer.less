@@ -1,3 +1,4 @@
+@import (reference) 'grid.less';
 @import (reference) 'mixins.less';
 
 .footer {
@@ -23,6 +24,10 @@
     section {
       .make-row();
     }
+  }
+
+  .tag-column {
+    .make-md-column(6);
   }
 
   .tagged-links,

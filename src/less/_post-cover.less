@@ -1,5 +1,8 @@
+@import (reference) 'grid.less';
+@import (reference) 'mixins.less';
+
 .post-cover {
-  height: 100vh;
+  height: 80vh;
   margin-bottom: 1.5em;
   position: relative;
 
@@ -60,8 +63,17 @@
     width: 100%;
     z-index: 10;
 
-    .container div {
-      // padding: 0;
+    section {
+      .make-row();
+
+      .post-cover__content {
+        .make-md-column(8);
+        .make-md-column-push(2);
+      }
+    }
+
+    .container {
+      .container-fluid;
     }
 
     em, strong {
