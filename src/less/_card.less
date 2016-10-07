@@ -40,10 +40,21 @@
 
   .card__metadata {
     .list-inline;
+
     color: @gray-light;
+
+    .metadata,
+    .metadata__list {
+      vertical-align: top;
+    }
 
     .metadata:empty {
       display: none;
+    }
+
+    .metadata__list {
+      .list-inline;
+      display: inline;
     }
 
     .metadata--date {
