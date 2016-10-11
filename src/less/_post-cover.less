@@ -1,5 +1,6 @@
 @import (reference) 'grid.less';
 @import (reference) 'mixins.less';
+@import './_links';
 
 .post-cover {
   height: 80vh;
@@ -88,13 +89,15 @@
       padding-top: 0;
     }
 
-    a {
-      border-bottom: 1px solid @color;
-      color: @color;
+    .icon {
+      margin-right: .1em;
+      margin-bottom: -.15em;
+    }
 
-      &:hover,
-      &:focus {
-        background-color: fade(@brand-primary, 70%);
+    a {
+      color: @body-bg;
+
+      &:hover {
         text-decoration: none;
       }
     }
