@@ -69,3 +69,21 @@
 [data-state="idle"] #search-results {
   display: none;
 }
+
+#search-results {
+  > h3 {
+    padding-bottom: 0;
+  }
+
+  .post__headline {
+    line-height: 1.75;
+    padding-bottom: 0;
+  }
+
+  .post__metadata {
+    color: @gray-lighter;
+    font-family: @font-family-sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
